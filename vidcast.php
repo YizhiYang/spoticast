@@ -42,7 +42,7 @@ include 'includes/header.php';
 		</div>
 	</div>
 
-	<iframe id="video" src="http://www.youtube.com/embed/?autoplay=1&enablejsapi=1" frameborder="0"></iframe>
+	<iframe id="video" src="https://www.youtube.com/embed/?autoplay=1&enablejsapi=1" frameborder="0"></iframe>
 	
 	<div class="title">
 		<p></p>
@@ -78,7 +78,7 @@ include 'includes/header.php';
 	    },
 	    initialized: function(data) {
 	        this.ready = true;
-	        window.player.loadVideoByUrl('http://www.youtube.com/embed/' +
+	        window.player.loadVideoByUrl('https://www.youtube.com/embed/' +
 	            Playlist.data[0][0].id + '?autoplay=1&enablejsapi=1');
 	        this.title.text(Playlist.data[0][0].title);
 	        if (Playlist.data.length == Playlist.total) {
@@ -292,7 +292,7 @@ include 'includes/header.php';
 	        $('.title p').text(Playlist.data[Playlist.currentIndex[0]][Playlist.currentIndex[
 	            1]].title);
 	        console.log(Playlist.currentIndex);
-	        window.player.loadVideoByUrl('http://www.youtube.com/embed/' + dirId +
+	        window.player.loadVideoByUrl('https://www.youtube.com/embed/' + dirId +
 	            '?autoplay=1&enablejsapi=1');
 	    }
 	    // Check for window focus for keyboard controls
@@ -320,7 +320,7 @@ include 'includes/header.php';
 	    });
 	    $("#links a.video-link").click(function() {
 	        window.player.loadVideoByUrl(
-	            'http://www.youtube.com/embed/' + $(this).data('id') +
+	            'https://www.youtube.com/embed/' + $(this).data('id') +
 	            '?autoplay=1&enablejsapi=1');
 	        Playlist.currentIndex = $(this).data('index').split(":").map(
 	            Number);
